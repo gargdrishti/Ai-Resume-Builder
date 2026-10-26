@@ -1,0 +1,110 @@
+# # Ignore node_modules in all directories
+# node_modules/
+
+# # Ignore environment variables
+# .env
+# .env.local
+# .env.development.local
+# .env.test.local
+# .env.production.local
+
+# # Ignore build outputs
+# dist/
+# build/
+# out/
+
+# # Ignore log files
+# *.log
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+
+# # Ignore OS files
+# .DS_Store
+# Thumbs.db
+```gitignore
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+client/dist/
+server/dist/
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE settings
+.vscode/
+.idea/
+
+# Testing and coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+# Local Python environment and cache, if applicable
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local machine configuration
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+### Where should you create it?
+
+Your project structure should look like this:
+
+```text
+Resume-Builder-main/
+├── .gitignore
+├── client/
+│   ├── package.json
+│   └── src/
+├── server/
+│   ├── package.json
+│   ├── server.js
+│   └── .env
+└── README.md
+```
+
+### Important things to remember
+
+- **`.env`** — Never upload your MongoDB password, JWT secret, Gmail App Password, or Stripe secret key to GitHub.
+- **`node_modules/`** — Don't upload installed dependencies. Render and Vercel install them during deployment.
+- **`client/dist/`** — Don't upload the generated frontend build; Vercel builds it during deployment.
+- **`.env.example`** — You can commit this file if it contains only variable names and placeholder values, never real credentials.
+
+### After creating `.gitignore`
+
+Open your terminal in the `Resume-Builder-main` root folder and run:
+
+```bash
+git status
+```
+
+Check that `.env` and `node_modules` are not listed as files to commit.
+
+**Important:** If `.env` was already committed to Git, adding it to `.gitignore` does not remove it from Git tracking. If that happened, tell me before pushing your project so we can remove it from tracking safely.

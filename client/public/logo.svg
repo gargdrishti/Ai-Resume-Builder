@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" fill="none">
+  <!-- 4-Petal Flower/Windmill Icon -->
+  <g transform="translate(8, 5) scale(0.5)">
+    <!-- Top-left (Pinkish Red) -->
+    <path d="M 46,46 Q 34,12 12,12 Q 12,34 46,46 Z" fill="#f43f5e" />
+    <!-- Top-right (Golden Yellow) -->
+    <path d="M 54,46 Q 66,12 88,12 Q 88,34 54,46 Z" fill="#eab308" />
+    <!-- Bottom-left (Teal/Emerald) -->
+    <path d="M 46,54 Q 34,88 12,88 Q 12,66 46,54 Z" fill="#10b981" />
+    <!-- Bottom-right (Purple) -->
+    <path d="M 54,54 Q 66,88 88,88 Q 88,66 54,54 Z" fill="#a855f7" />
+  </g>
+
+  <!-- Resumify Brand Text -->
+  <text x="68" y="39" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#0f172a" letter-spacing="-0.5">
+    Resumi<tspan fill="#10b981">fy</tspan>
+  </text>
+</svg>
