@@ -20,11 +20,20 @@ app.use((req, res, next) => {
 });
 
 // app.use(cors());
+// app.use(cors({
+//     origin: [
+//         'http://localhost:5173',
+//         'https://ai-resume-builder-mu-bay.vercel.app'
+//     ]
+// }));
+
 app.use(cors({
     origin: [
         'http://localhost:5173',
-        'https://ai-resume-builder-mu-bay.vercel.app/'
-    ]
+        'https://ai-resume-builder-gd6cnw8he-drishtis-projects-38fcc71a.vercel.app'
+    ],
+    methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 // Connect Database
